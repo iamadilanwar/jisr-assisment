@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jisr-assisment/static/css/main.8896e839.css",
+    "main.js": "/jisr-assisment/static/js/main.398174d8.js",
+    "static/js/787.cd8aa8af.chunk.js": "/jisr-assisment/static/js/787.cd8aa8af.chunk.js",
+    "index.html": "/jisr-assisment/index.html",
+    "main.8896e839.css.map": "/jisr-assisment/static/css/main.8896e839.css.map",
+    "main.398174d8.js.map": "/jisr-assisment/static/js/main.398174d8.js.map",
+    "787.cd8aa8af.chunk.js.map": "/jisr-assisment/static/js/787.cd8aa8af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8896e839.css",
+    "static/js/main.398174d8.js"
+  ]
+}
