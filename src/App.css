@@ -1,0 +1,99 @@
+/* Main Page Css */
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.btn {
+  background: linear-gradient(
+    100deg,
+    rgba(40, 34, 195, 1) 0%,
+    rgba(253, 45, 201, 1) 100%
+  );
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 1;
+  background: linear-gradient(
+    100deg,
+    rgba(253, 45, 201, 1) 0%,
+    rgba(40, 34, 195, 1) 100%
+  );
+  border: 1px solid white;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+/* Main Page Css */
+
+/* Modal Css */
+.footerModal{
+text-align: end;
+  width: 100%;
+  align-items: flex-end;
+}
+.icon{
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  background-color: #FEE4E2;
+}
+.title{
+ margin: 0.5rem 1rem;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 24px;
+ 
+ align-items: center;
+}
+.body{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 3.6rem;
+  display: flex;
+  align-items: center;
+  color: #070F2C;
+}
+.ant-btn{
+height: auto;
+padding: 8px 16px;
+border-radius: 8px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+font-style: normal;
+font-family: 'IBM Plex Sans';
+align-items: center;
+text-align: center;
+}
+
+.ant-btn-primary.ant-btn-dangerous{
+background-color: #F04438;
+color: #FFFFFF;
+}
+
+.ant-btn-default{
+color: #344054;
+border-color: #344054;
+}
+
+/* Modal Css */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
