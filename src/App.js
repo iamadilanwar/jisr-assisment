@@ -1,13 +1,13 @@
-import React from "react";
-import { Button, Modal, Tooltip } from "antd";
-import { useState } from "react";
-import {
-  ExclamationCircleTwoTone,
-} from "@ant-design/icons";
+import React, { useContext } from "react";
+import { Button, Modal } from "antd";
+import { ExclamationCircleTwoTone } from "@ant-design/icons";
 import "./App.css";
+import { JisrContext } from "./context/Context";
+import ActionButton from "./component/ActionButton";
+import ModalView from "./component/ModalView";
 
 function App() {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen, modalData } = useContext(JisrContext);
 
   const showModal = () => {
     setOpen(true);
@@ -21,45 +21,17 @@ function App() {
 
   return (
     <div className="App">
-      <Tooltip title="Click to Open the Jisr Test Modal" color="purple">
-        <button className="btn" onClick={showModal}>
-          Click Me
-        </button>
-      </Tooltip>
-
-      <Modal
+      <ActionButton
+        title="Click Me"
+        showModal={showModal}
+        helpMessage="Click to Open the Jisr Test Modal"
+      />
+      <ModalView
         open={open}
-        title={
-          <>
-            <span className="icon">
-              <ExclamationCircleTwoTone
-                twoToneColor="#B42318"
-                style={{
-                  fontSize: "1.3rem",
-                }}
-              />
-            </span>
-            <span className="title"> Unclosed Overdue Pay Runs</span>
-          </>
-        }
-        onOk={handleConfirm}
-        onCancel={handleCancel}
-        footer={[
-          <Button key="back" onClick={handleCancel}>
-            Back
-          </Button>,
-          <Button key="submit" danger type="primary" onClick={handleConfirm}>
-            Skip Unclosed Periods
-          </Button>,
-        ]}
-      >
-        <div className="body">
-          <p>
-            Would you like to skip unclosed periods and start with this pay run{" "}
-            <b>(January 2023)?</b>
-          </p>
-        </div>
-      </Modal>
+        handleConfirm={handleConfirm}
+        handleCancel={handleCancel}
+        data={modalData}
+      />
     </div>
   );
 }
