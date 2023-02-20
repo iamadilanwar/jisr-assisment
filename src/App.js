@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import { Button, Modal } from "antd";
-import { ExclamationCircleTwoTone } from "@ant-design/icons";
 import "./App.css";
 import { JisrContext } from "./context/Context";
 import ActionButton from "./component/ActionButton";
